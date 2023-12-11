@@ -23,28 +23,29 @@ Server preparation
 
 Ubuntu 22.04
 
-Package
+
+#Package
 
     sudo apt-get update && sudo apt-get upgrade -y
     sudo apt install curl build-essential git screen jq pkg-config libssl-dev libclang-dev ca-certificates gnupg lsb-release -y
 
-Docker
+#Docker
 
     sudo apt install curl -y && curl -sO https://nodesync.top/docker_install && chmod +x docker_install && bash docker_install
 
-Login to private registry
+#Login to private registry
 
     docker login -u public -p glpat-XvZ6bPe48rFGZ5z14Fxz registry.waterfall.network
 
-Pull image
+#Pull image
 
     docker pull registry.waterfall.network/waterfall/protocol/docker:2-rc1
 
-Run Node
+#Run Node
 
     cd ~ && docker run --platform linux/amd64 --name wf -d --rm -p 4000:4000 -p 13000:13000 -p 12000:12000/udp -p 30303:30303 -p 9545:9545 -p 9546:9546 -v $PWD/.wf/logs:/opt/wf/data/logs -v $PWD/.wf/gwat:/opt/wf/data/gwat -v $PWD/.wf/coordinator:/opt/wf/data/coordinator registry.waterfall.network/waterfall/protocol/docker:2-rc1
 
-Check status
+#Check status
 
     docker exec -it wf /opt/wf/sh/status.sh
 
