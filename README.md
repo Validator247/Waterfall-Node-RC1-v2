@@ -1,14 +1,26 @@
 # Waterfall-Node-RC1-v2
+
+
 Website: https://waterfall.network/ 
+
 Twitter: https://twitter.com/waterfall_dag 
+
 Telegram: https://t.me/waterfall_network 
+
 Tokenomics: https://docs.waterfall.network/overview/economics/ 
+
 Guide dev: https://docs.waterfall.network/tutorials/setup-docker-node-rc1/ 
+
 Waterfall Validators Statistics Page: https://staking.rc1.waterfall.network/ 
+
 Block explorer: https://explorer.rc1.waterfall.network/
+
 Minimum hardware requirement
+
 4 Cores, 8G Ram, Min 500G SSD
+
 Server preparation
+
 Ubuntu 22.04
 
 Package
